@@ -1,0 +1,103 @@
+/* --------------------
+   1. Importation de la Police et Styles de Base
+   -------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Réinitialisation de base */
+body {
+    font-family: 'Roboto', sans-serif; /* Changement de police */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9; /* Arrière-plan doux */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --------------------
+   2. Styles de l'En-tête et de la Navigation (Inline)
+   -------------------- */
+header {
+    background-color: #1a73e8; /* Un bleu vif */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Aligne le titre à gauche et la nav à droite */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Conteneur de la liste de navigation */
+nav ul {
+    list-style: none; /* Supprimer les puces */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Rend les éléments de la liste inline */
+    gap: 20px; /* Ajoute de l'espace entre les liens */
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Effet au survol */
+}
+
+/* --------------------
+   3. Styles des Sections
+   -------------------- */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #1a73e8;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Style spécifique pour la section d'accueil */
+#home {
+    text-align: center;
+    background-color: #e6f0ff; /* Bleu très clair */
+}
+
+.portfolio-video {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------
+   4. Pied de Page
+   -------------------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
